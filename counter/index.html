@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+
+            min-height: calc(100vh);
+            display: grid;
+            place-items: center;
+            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 3rem;
+            color: #fff;
+        }
+
+        .btn-hero {
+            font-family: "Ranchers", sans-serif;
+            text-transform: uppercase;
+            background: transparent;
+            color: #222;
+            letter-spacing: 0.1rem;
+            display: inline-block;
+            font-weight: 700;
+            transition: all 0.3s linear;
+            border: 2px solid #ffffff;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(217, 237, 247, 0.2);
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            padding: 0.75rem 1.25rem;
+        }
+
+        .btn-hero:hover {
+            color: #fff;
+            background: #d533693d;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <main>
+        <div class="container">
+            <h2>Counter</h2>
+            <h3 id="number"></h3>
+            <div class="btn-row">
+                <button class="btn-hero" id="decrease">Decrease</button>
+                <button class="btn-hero" id="reset">Reset</button>
+                <button class="btn-hero" id="increase">Increase</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script>
+        let count = 0;
+        const num = document.getElementById("number")
+        const decrease = document.getElementById("decrease")
+        const reset = document.getElementById("reset")
+        const increase = document.getElementById("increase")
+        updateNumber();
+
+        increase.addEventListener('click', () => {
+            count++
+            updateNumber();
+
+        })
+        decrease.addEventListener('click', () => {
+            if (count > 0) {
+                count--
+                updateNumber();
+
+            }
+
+        })
+        reset.addEventListener('click', () => {
+            count = 0
+            updateNumber();
+        })
+
+        function updateNumber() {
+            num.innerHTML = count
+        }
+    </script>
+
+</body>
+
+</html>
