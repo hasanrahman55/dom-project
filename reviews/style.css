@@ -1,0 +1,62 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+ 
+
+}
+.title{
+    font-size: 28px;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+#person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .review{
+    /* height: 500px; */
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(85, 85, 246, 0.589);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  h2{
+    font-size: 1.50rem;
+    color: chocolate;
+  }
+  #info{
+    margin-bottom: 10px;
+  }
+
+  .button-container{
+    margin-bottom: 10px;
+  }
