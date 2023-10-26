@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video</title>
+  </head>
+  <body>
+    <video src="a.mp4" type="video/mp4" autoplay controls  width="400"  id="myVideo"></video>
+    <button type="button" id="pause">Pause</button>
+    <button type="button" id="play">Play</button>
+  </body>
+
+  <script>
+    let myVideo = document.getElementById("myVideo");
+    let pause = document.getElementById("pause");
+    let play = document.getElementById("play");
+
+
+    pause.addEventListener('click',()=>{
+        if(myVideo.play){
+            myVideo.pause()
+        }
+    })
+    play.addEventListener('click',()=>{
+        if(myVideo.pause){
+            myVideo.play()
+        }
+    })
+  </script>
+</html>
