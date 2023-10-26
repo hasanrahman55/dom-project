@@ -63,12 +63,10 @@ prevBtn.addEventListener("click", () => {
   info.innerHTML = reviews[count].text;
 });
 
-
 randomBtn.addEventListener("click", () => {
-    count=Math.floor(Math.random() * reviews.length) ;
-    image.src = reviews[count].img;
+  count = Math.floor(Math.random() * reviews.length);
+  image.src = reviews[count].img;
   author.innerHTML = reviews[count].name;
   job.innerHTML = reviews[count].job;
   info.innerHTML = reviews[count].text;
-  });
-  
+});

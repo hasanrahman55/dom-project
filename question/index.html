@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .faq {
+        text-align: center;
+        display: grid;
+        align-content: center;
+        width: 600px;
+      }
+      #qestion {
+        text-align: center;
+        padding: 20px 20px;
+        box-shadow: 2px 2px 5px rgb(190, 190, 246);
+      }
+      #answer {
+        text-align: center;
+        padding: 20px 20px;
+        background-color: white;
+   
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+
+      <div class="faq">
+        <div id="qestion">This is Question</div>
+
+        <div id="answer">thsi is and</div>
+      </div>
+
+      <!-- <div class="section">
+        <div class="question">
+         
+          <button type="button" class="btn">
+            <p>what is you name</p>
+
+          </button>
+        </div>
+        <div id="answer">MY name is mr. A</div>
+      </div> -->
+    </main>
+  </body>
+  <script>
+
+
+const qestion = document.getElementById("qestion")
+const ans = document.getElementById("answer")
+
+qestion.addEventListener('click',()=>{
+  if( ans.style.display === "none")
+{
+  ans.style.display ="block"
+}else{
+  ans.style.display ="none"
+}
+})
+
+
+    //  const btn = document.querySelector(".btn")
+    //  const ans = document.getElementById("answer")
+
+    //  btn.addEventListener('click',()=>{
+    //   if (ans.style.display === "none") {
+    //     ans.style.display = "block";
+    // } else {
+    //   ans.style.display = "none";
+    // }
+
+    //  })
+  </script>
+</html>
